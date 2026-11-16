@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Estante de almacén con cajas etiquetadas">
+<g fill="none" stroke="#F4B400" stroke-width="6">
+<line x1="30" y1="20" x2="30" y2="290"/><line x1="370" y1="20" x2="370" y2="290"/>
+<line x1="30" y1="100" x2="370" y2="100"/><line x1="30" y1="195" x2="370" y2="195"/><line x1="30" y1="290" x2="370" y2="290"/>
+</g>
+<g stroke="#10263B" stroke-width="2">
+<rect x="50" y="52" width="80" height="48" fill="#C9A66B"/><rect x="140" y="68" width="64" height="32" fill="#D9B97E"/><rect x="215" y="40" width="90" height="60" fill="#C9A66B"/>
+<rect x="50" y="140" width="64" height="55" fill="#D9B97E"/><rect x="124" y="125" width="96" height="70" fill="#C9A66B"/><rect x="232" y="150" width="70" height="45" fill="#D9B97E"/><rect x="312" y="135" width="46" height="60" fill="#C9A66B"/>
+<rect x="50" y="232" width="100" height="58" fill="#C9A66B"/><rect x="160" y="248" width="70" height="42" fill="#D9B97E"/><rect x="240" y="226" width="100" height="64" fill="#C9A66B"/>
+</g>
+<g fill="#fff" stroke="#10263B" stroke-width="1.5">
+<rect x="62" y="70" width="34" height="16"/><rect x="236" y="58" width="40" height="16"/><rect x="138" y="146" width="40" height="16"/><rect x="62" y="248" width="40" height="16"/><rect x="258" y="244" width="40" height="16"/>
+</g>
+</svg>
