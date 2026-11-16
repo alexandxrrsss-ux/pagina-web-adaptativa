@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport: el ancho de la página sigue al ancho real del celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Portafolio de Christopher «Lo» Torres: sistemas web de inventario, páginas adaptativas y soporte técnico.">
+  <title>Lo Torres | Sistemas web para inventarios</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <a class="marca" href="#inicio">Lo Torres</a>
+
+    <!-- Menú móvil sin JavaScript: el checkbox abre y cierra la lista -->
+    <input type="checkbox" id="menu-check" class="menu-check">
+    <label for="menu-check" class="menu-boton" aria-label="Abrir o cerrar el menú">
+      <span class="menu-barras"></span>
+    </label>
+
+    <nav class="menu" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>Hago sistemas web para que el inventario deje de vivir en hojas de Excel</h1>
+        <p>
+          Soy Christopher «Lo» Torres, estudiante de TI en León, Guanajuato. Construyo herramientas
+          para controlar almacenes, préstamos y tareas.
+        </p>
+        <p class="botones">
+          <a class="boton boton-principal" href="#proyectos">Ver mis proyectos</a>
+          <a class="boton boton-secundario" href="#contacto">Escríbeme</a>
+        </p>
+      </div>
+      <img class="hero-imagen" src="img/estante.svg" width="400" height="300"
+           alt="Estante de almacén con cajas etiquetadas">
+    </section>
+
+    <section id="sobre-mi" class="seccion">
+      <h2>Sobre mí</h2>
+      <div class="sobre-contenido">
+        <img class="avatar" src="img/lo.svg" width="200" height="200"
+             alt="Iniciales LO dentro de una etiqueta amarilla">
+        <div>
+          <p>
+            Estudio Ingeniería en Tecnologías de la Información e Innovación Digital en la Universidad
+            Tecnológica de León.
+          </p>
+          <p>
+            Trabajo en el almacén de una distribuidora industrial familiar. Ahí llevo el control de
+            herramientas e inventario, y de ese trabajo salieron mis primeros sistemas.
+          </p>
+          <p>
+            Ahora practico Python y Java, y diseño páginas que se ven bien en el celular, que es donde
+            la gente las abre primero.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="seccion seccion-clara">
+      <h2>Servicios</h2>
+      <ul class="servicios">
+        <li class="servicio">
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 4h18v4H3zM4 8h16v12H4zM9 12h6" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <h3>Control de inventario</h3>
+          <p>
+            Sistemas con acceso por roles para registrar existencias y préstamos de herramienta,
+            conectados a tus archivos de Excel.
+          </p>
+        </li>
+        <li class="servicio">
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="7" y="2" width="10" height="20" rx="2" fill="none"
+                  stroke="currentColor" stroke-width="2"/>
+            <path d="M11 18h2" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <h3>Páginas adaptativas</h3>
+          <p>
+            Sitios que se acomodan al celular, a la tableta y a la computadora, con menús y botones
+            fáciles de tocar.
+          </p>
+        </li>
+        <li class="servicio">
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 6a4 4 0 0 0-5 5L3 17l4 4 6-6a4 4 0 0 0 5-5l-3 3-3-1-1-3z" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <h3>Soporte técnico y redes</h3>
+          <p>
+            Mantenimiento de equipos, instalación de software y apoyo en la administración de redes
+            LAN.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <h2>Proyectos</h2>
+      <div class="carrusel" role="region" aria-roledescription="carrusel" aria-label="Proyectos destacados">
+        <ul class="pista" tabindex="0">
+          <li class="diapositiva">
+            <figure>
+              <img src="img/stockmaster.svg" alt="Tabla de inventario del sistema StockMaster"
+                   width="600" height="400">
+              <figcaption>
+                <h3>StockMaster</h3>
+                <p>Inventario con acceso por roles para un almacén industrial.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="diapositiva">
+            <figure>
+              <img src="img/herramientas.svg" alt="Tabla de préstamos del sistema de herramientas"
+                   width="600" height="400">
+              <figcaption>
+                <h3>Control de herramientas</h3>
+                <p>Préstamos de herramienta con Flask y datos en Excel.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="diapositiva">
+            <figure>
+              <img src="img/taskmaster.svg" alt="Tablero de tareas de TaskMaster PRO Plus"
+                   width="600" height="400">
+              <figcaption>
+                <h3>TaskMaster PRO Plus</h3>
+                <p>Gestor de tareas en equipo con Firebase.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="diapositiva">
+            <figure>
+              <img src="img/alfallo.svg" alt="Gráfica de barras de la aplicación AL FALLO"
+                   width="600" height="400">
+              <figcaption>
+                <h3>AL FALLO</h3>
+                <p>Aplicación web para registrar y seguir tu entrenamiento.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="diapositiva">
+            <figure>
+              <img src="img/zenapp.svg" alt="Dos pantallas de la app móvil ZenApp2"
+                   width="600" height="400">
+              <figcaption>
+                <h3>ZenApp2</h3>
+                <p>App móvil hecha con React Native.</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <button class="carrusel-btn carrusel-anterior" type="button" aria-label="Proyecto anterior">&#8249;</button>
+        <button class="carrusel-btn carrusel-siguiente" type="button" aria-label="Proyecto siguiente">&#8250;</button>
+        <p class="carrusel-estado" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion seccion-clara">
+      <h2>Contacto</h2>
+      <p>Cuéntame qué necesitas controlar o qué página quieres tener. Respondo lo antes posible.</p>
+      <form class="formulario" action="#" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email" required>
+        </div>
+        <div class="campo campo-mensaje">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button class="boton boton-principal" type="submit">Enviar mensaje</button>
+        <p class="formulario-estado" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 Christopher Torres. León, Guanajuato, México.</p>
+    <p><a href="https://github.com/alexandxrrsss-ux">Mi perfil en GitHub</a></p>
+  </footer>
+
+  <script>
+    // Cierra el menú móvil al elegir una opción
+    const menuCheck = document.getElementById('menu-check');
+    document.querySelectorAll('.menu a').forEach(function (enlace) {
+      enlace.addEventListener('click', function () { menuCheck.checked = false; });
+    });
+
+    // Carrusel: botones, estado y desactivación en los extremos
+    const pista = document.querySelector('.pista');
+    const diapositivas = pista.querySelectorAll('.diapositiva');
+    const anterior = document.querySelector('.carrusel-anterior');
+    const siguiente = document.querySelector('.carrusel-siguiente');
+    const estado = document.querySelector('.carrusel-estado');
+
+    function pasoDelCarrusel() {
+      return diapositivas[1].offsetLeft - diapositivas[0].offsetLeft;
+    }
+    function actualizarCarrusel() {
+      const indice = Math.round(pista.scrollLeft / pasoDelCarrusel());
+      const visibles = Math.max(1, Math.round(pista.clientWidth / pasoDelCarrusel()));
+      estado.textContent = 'Proyecto ' + (indice + 1) + ' de ' + diapositivas.length;
+      anterior.disabled = indice <= 0;
+      siguiente.disabled = indice + visibles >= diapositivas.length;
+    }
+    anterior.addEventListener('click', function () {
+      pista.scrollBy({ left: -pasoDelCarrusel(), behavior: 'smooth' });
+    });
+    siguiente.addEventListener('click', function () {
+      pista.scrollBy({ left: pasoDelCarrusel(), behavior: 'smooth' });
+    });
+    pista.addEventListener('scroll', actualizarCarrusel);
+    window.addEventListener('resize', actualizarCarrusel);
+    actualizarCarrusel();
+
+    // Formulario: retroalimentación al enviar (demostración, sin servidor)
+    const formulario = document.querySelector('.formulario');
+    formulario.addEventListener('submit', function (evento) {
+      evento.preventDefault();
+      formulario.querySelector('.formulario-estado').textContent =
+        'Formulario de demostración: el mensaje no se envió porque aún no hay servidor conectado.';
+    });
+  </script>
+</body>
+</html>
